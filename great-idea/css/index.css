@@ -9,7 +9,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
+dl, dt, dd, ol, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -55,7 +55,8 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	margin: 0px 50px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -79,10 +80,10 @@ h1, h2, h3, h4, h5 {
 			font-size: 13px;
 			color: gray;
 			justify-content:center;
-			padding:70px;
+			padding:30px;
 		}
 	.logo {
-		padding:0px 20px;
+	
 	}
   
 	.tagline {
@@ -109,12 +110,8 @@ h1, h2, h3, h4, h5 {
 
 
 
-	.page-content {
-		border-top: 1px solid black;
-		padding:20px;
-	}
-
 		 .top-content {
+			border-top: 1px solid black;
 			display:flex;
 			justify-content:center;
 			
@@ -122,24 +119,28 @@ h1, h2, h3, h4, h5 {
 
 	.content-box {
 		justify-content: center;
+		max-width:40%;
+		padding:20px;
 	}
 
-	.middleimg {
-		display:flex;
-		justify-content:center;
-		padding:20px;
+	.middleimg  {
+		min-width:100%;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
  		.bottom-content {
 			display:flex;
-			justify-content: center;
+			
 	}
-
+		.content-box{
+		justify-content: space-around;
+		max-width:40%;
+		padding:20px;
+		}
 	
 
-	.page-content .bottom-content .content-box:last-child {
-		
-	}
+	
 
 	address {
 		border-top: 1px solid black;
@@ -160,4 +161,77 @@ footer {
 	justify-content: center;
 	font-size: 15px;
 
+}
+
+
+
+
+ /* service page CSS  */
+
+/* Intro below this line */
+
+.services-header-img{
+	/* max-width: 100%; */
+	min-width: 100%;
+	/* padding:20px; */
+	/* justify-content:center; */
+	/* margin-left: 9%; */
+}
+/* .intro1{
+	display:flex;
+
+} */
+
+
+.container {
+	padding: 5%;
+}
+.intro {
+	padding: 10px;
+}
+
+.item {
+	background-color:lightgrey;
+	border: 1px solid black;
+	display:flex;
+	flex-direction:column;
+	width:45%;
+	margin:2%;
+	justify-content: space-evenly;
+	padding:30px;
+}
+
+.service-options{
+	display:flex;
+	flex-wrap: wrap;
+	
+}
+
+button {
+	margin:20px;
+	align-self:flex-start;
+}
+
+.facts {
+	display:flex;
+	/* padding: 2%; */
+	justify-content:space-between;
+}
+
+.servicefacts {
+	justify-content: center;
+	align-content:space-between;
+	max-width: 50%;
+
+}
+
+ul {
+	list-style-type: circle;
+}
+
+
+.copy-right{
+	display:flex;
+	justify-content: center;
+	padding-top: 10px;
 }
